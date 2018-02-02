@@ -7,9 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1873EF2A79738E75210792EA /* Pods_Bedrock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAA82A0EBB308328411D6135 /* Pods_Bedrock.framework */; };
+		53AD82AC9804037E20DD36C3 /* Pods_BedrockTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 433CF877071BC76402514547 /* Pods_BedrockTests.framework */; };
+		7804A4892028B376003E4330 /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7804A4882028B376003E4330 /* Functions.swift */; };
+		7804A4912028B699003E4330 /* Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7804A4902028B699003E4330 /* Bundle.swift */; };
+		7804A4A82028C0BF003E4330 /* BedrockNamespace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7804A4A72028C0BF003E4330 /* BedrockNamespace.swift */; };
+		783440B22024DF51008DB8E0 /* Optional.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783440B12024DF51008DB8E0 /* Optional.swift */; };
+		783440B42024DFA0008DB8E0 /* Sequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783440B32024DFA0008DB8E0 /* Sequence.swift */; };
+		783440BB2024F6CC008DB8E0 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783440BA2024F6CC008DB8E0 /* String.swift */; };
+		78CD2D8B202A3E27005D8A21 /* StringSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CD2D8A202A3E27005D8A21 /* StringSpec.swift */; };
+		78CD2D8F202A4087005D8A21 /* SequenceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CD2D8E202A4087005D8A21 /* SequenceSpec.swift */; };
+		78CD2D91202A418C005D8A21 /* OptionalSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CD2D90202A418C005D8A21 /* OptionalSpec.swift */; };
 		9426A67D2024BBD2002F0BBB /* Bedrock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9426A6732024BBD2002F0BBB /* Bedrock.framework */; };
-		9426A6822024BBD2002F0BBB /* BedrockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9426A6812024BBD2002F0BBB /* BedrockTests.swift */; };
 		9426A6842024BBD2002F0BBB /* Bedrock.h in Headers */ = {isa = PBXBuildFile; fileRef = 9426A6762024BBD2002F0BBB /* Bedrock.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		948F1E8F202CDAA700DB978C /* Range+Clamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948F1E8E202CDAA700DB978C /* Range+Clamp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,12 +34,28 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1FB45EA124525823DFBE0442 /* Pods-BedrockTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BedrockTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BedrockTests/Pods-BedrockTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2A7B1729C7E576CF0DB18981 /* Pods-Bedrock.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bedrock.release.xcconfig"; path = "Pods/Target Support Files/Pods-Bedrock/Pods-Bedrock.release.xcconfig"; sourceTree = "<group>"; };
+		433CF877071BC76402514547 /* Pods_BedrockTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BedrockTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7804A4882028B376003E4330 /* Functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
+		7804A4902028B699003E4330 /* Bundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bundle.swift; sourceTree = "<group>"; };
+		7804A4A72028C0BF003E4330 /* BedrockNamespace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BedrockNamespace.swift; sourceTree = "<group>"; };
+		783440B12024DF51008DB8E0 /* Optional.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Optional.swift; sourceTree = "<group>"; };
+		783440B32024DFA0008DB8E0 /* Sequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sequence.swift; sourceTree = "<group>"; };
+		783440BA2024F6CC008DB8E0 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		783490B7202CA723001248C3 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		78CD2D8A202A3E27005D8A21 /* StringSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringSpec.swift; sourceTree = "<group>"; };
+		78CD2D8E202A4087005D8A21 /* SequenceSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SequenceSpec.swift; sourceTree = "<group>"; };
+		78CD2D90202A418C005D8A21 /* OptionalSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionalSpec.swift; sourceTree = "<group>"; };
 		9426A6732024BBD2002F0BBB /* Bedrock.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Bedrock.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9426A6762024BBD2002F0BBB /* Bedrock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Bedrock.h; sourceTree = "<group>"; };
 		9426A6772024BBD2002F0BBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9426A67C2024BBD2002F0BBB /* BedrockTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BedrockTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9426A6812024BBD2002F0BBB /* BedrockTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BedrockTests.swift; sourceTree = "<group>"; };
 		9426A6832024BBD2002F0BBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		948F1E8E202CDAA700DB978C /* Range+Clamp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Range+Clamp.swift"; sourceTree = "<group>"; };
+		CC311D4E61FA36976F73E989 /* Pods-Bedrock.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bedrock.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Bedrock/Pods-Bedrock.debug.xcconfig"; sourceTree = "<group>"; };
+		EAA82A0EBB308328411D6135 /* Pods_Bedrock.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bedrock.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6B50A3F964FCCA4E6EC401B /* Pods-BedrockTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BedrockTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BedrockTests/Pods-BedrockTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1873EF2A79738E75210792EA /* Pods_Bedrock.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,18 +72,50 @@
 			buildActionMask = 2147483647;
 			files = (
 				9426A67D2024BBD2002F0BBB /* Bedrock.framework in Frameworks */,
+				53AD82AC9804037E20DD36C3 /* Pods_BedrockTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		765DC048597F7E7074573AD5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EAA82A0EBB308328411D6135 /* Pods_Bedrock.framework */,
+				433CF877071BC76402514547 /* Pods_BedrockTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		76C8480A55E48AD900AF7AB3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CC311D4E61FA36976F73E989 /* Pods-Bedrock.debug.xcconfig */,
+				2A7B1729C7E576CF0DB18981 /* Pods-Bedrock.release.xcconfig */,
+				1FB45EA124525823DFBE0442 /* Pods-BedrockTests.debug.xcconfig */,
+				F6B50A3F964FCCA4E6EC401B /* Pods-BedrockTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		783440B52024DFD6008DB8E0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9426A6772024BBD2002F0BBB /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		9426A6692024BBD2002F0BBB = {
 			isa = PBXGroup;
 			children = (
+				783490B7202CA723001248C3 /* Package.swift */,
 				9426A6752024BBD2002F0BBB /* Bedrock */,
 				9426A6802024BBD2002F0BBB /* BedrockTests */,
 				9426A6742024BBD2002F0BBB /* Products */,
+				76C8480A55E48AD900AF7AB3 /* Pods */,
+				765DC048597F7E7074573AD5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,8 +131,8 @@
 		9426A6752024BBD2002F0BBB /* Bedrock */ = {
 			isa = PBXGroup;
 			children = (
-				9426A6762024BBD2002F0BBB /* Bedrock.h */,
-				9426A6772024BBD2002F0BBB /* Info.plist */,
+				94CDA56E2028EAF8009F2E4A /* Sources */,
+				783440B52024DFD6008DB8E0 /* Supporting Files */,
 			);
 			path = Bedrock;
 			sourceTree = "<group>";
@@ -80,10 +140,27 @@
 		9426A6802024BBD2002F0BBB /* BedrockTests */ = {
 			isa = PBXGroup;
 			children = (
-				9426A6812024BBD2002F0BBB /* BedrockTests.swift */,
 				9426A6832024BBD2002F0BBB /* Info.plist */,
+				78CD2D8A202A3E27005D8A21 /* StringSpec.swift */,
+				78CD2D8E202A4087005D8A21 /* SequenceSpec.swift */,
+				78CD2D90202A418C005D8A21 /* OptionalSpec.swift */,
 			);
 			path = BedrockTests;
+			sourceTree = "<group>";
+		};
+		94CDA56E2028EAF8009F2E4A /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				9426A6762024BBD2002F0BBB /* Bedrock.h */,
+				7804A4A72028C0BF003E4330 /* BedrockNamespace.swift */,
+				7804A4902028B699003E4330 /* Bundle.swift */,
+				7804A4882028B376003E4330 /* Functions.swift */,
+				783440B12024DF51008DB8E0 /* Optional.swift */,
+				948F1E8E202CDAA700DB978C /* Range+Clamp.swift */,
+				783440B32024DFA0008DB8E0 /* Sequence.swift */,
+				783440BA2024F6CC008DB8E0 /* String.swift */,
+			);
+			path = Sources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -104,10 +181,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9426A6872024BBD2002F0BBB /* Build configuration list for PBXNativeTarget "Bedrock" */;
 			buildPhases = (
+				D0C6C43CE5131733BE7D2703 /* [CP] Check Pods Manifest.lock */,
 				9426A66E2024BBD2002F0BBB /* Sources */,
 				9426A66F2024BBD2002F0BBB /* Frameworks */,
 				9426A6702024BBD2002F0BBB /* Headers */,
 				9426A6712024BBD2002F0BBB /* Resources */,
+				3B3ACAB04AED07C958F73526 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -122,9 +201,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9426A68A2024BBD2002F0BBB /* Build configuration list for PBXNativeTarget "BedrockTests" */;
 			buildPhases = (
+				0A8E8E857C3CC6EA4F398641 /* [CP] Check Pods Manifest.lock */,
 				9426A6782024BBD2002F0BBB /* Sources */,
 				9426A6792024BBD2002F0BBB /* Frameworks */,
 				9426A67A2024BBD2002F0BBB /* Resources */,
+				C0368FDF6247E278915BE85F /* [CP] Embed Pods Frameworks */,
+				3BB64F64C0BEE19F71C11087 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -148,10 +230,12 @@
 				TargetAttributes = {
 					9426A6722024BBD2002F0BBB = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 					9426A67B2024BBD2002F0BBB = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -191,11 +275,107 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0A8E8E857C3CC6EA4F398641 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BedrockTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3B3ACAB04AED07C958F73526 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Bedrock/Pods-Bedrock-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3BB64F64C0BEE19F71C11087 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BedrockTests/Pods-BedrockTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C0368FDF6247E278915BE85F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-BedrockTests/Pods-BedrockTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BedrockTests/Pods-BedrockTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D0C6C43CE5131733BE7D2703 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Bedrock-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9426A66E2024BBD2002F0BBB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				783440B42024DFA0008DB8E0 /* Sequence.swift in Sources */,
+				7804A4A82028C0BF003E4330 /* BedrockNamespace.swift in Sources */,
+				783440B22024DF51008DB8E0 /* Optional.swift in Sources */,
+				948F1E8F202CDAA700DB978C /* Range+Clamp.swift in Sources */,
+				783440BB2024F6CC008DB8E0 /* String.swift in Sources */,
+				7804A4912028B699003E4330 /* Bundle.swift in Sources */,
+				7804A4892028B376003E4330 /* Functions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,7 +383,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9426A6822024BBD2002F0BBB /* BedrockTests.swift in Sources */,
+				78CD2D8B202A3E27005D8A21 /* StringSpec.swift in Sources */,
+				78CD2D91202A418C005D8A21 /* OptionalSpec.swift in Sources */,
+				78CD2D8F202A4087005D8A21 /* SequenceSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -333,7 +515,9 @@
 		};
 		9426A6882024BBD2002F0BBB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC311D4E61FA36976F73E989 /* Pods-Bedrock.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -341,13 +525,14 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Bedrock/Info.plist;
+				INFOPLIST_FILE = "Bedrock/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.duet.Bedrock;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -355,7 +540,9 @@
 		};
 		9426A6892024BBD2002F0BBB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A7B1729C7E576CF0DB18981 /* Pods-Bedrock.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -363,7 +550,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Bedrock/Info.plist;
+				INFOPLIST_FILE = "Bedrock/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -377,13 +564,17 @@
 		};
 		9426A68B2024BBD2002F0BBB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1FB45EA124525823DFBE0442 /* Pods-BedrockTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 75Y586SA36;
 				INFOPLIST_FILE = BedrockTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.duet.BedrockTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -391,7 +582,10 @@
 		};
 		9426A68C2024BBD2002F0BBB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F6B50A3F964FCCA4E6EC401B /* Pods-BedrockTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 75Y586SA36;
 				INFOPLIST_FILE = BedrockTests/Info.plist;
