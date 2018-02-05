@@ -1,11 +1,3 @@
-//
-//  NSArrayExtensions.swift
-//  Bedrock
-//
-//  Created by sylvester watts on 2/5/18.
-//  Copyright © 2018 Duet Health LLC. All rights reserved.
-//
-
 import Foundation
 
 public extension NSArray {
@@ -54,6 +46,8 @@ public extension NSArray {
     }
 
     public typealias Aggregate = Any
+
+    // TODO : Write a doc
     @objc public func duet_reduce(_ start: Aggregate, _ fold: (Aggregate, Element) -> Aggregate) -> Aggregate {
         return self.reduce(start, fold)
     }
