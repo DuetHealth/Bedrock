@@ -1,22 +1,10 @@
 import Foundation
 
-/// Encapsulates custom behaviors on views with a "proxy namespace" struct.
-///
-/// Any extensions to a type that could potentially conflict with other APIs, or extensions that are
-/// highly situational, should be written as an extension to this type. Methods can then be called
-/// similar to
+/// Encapsulates custom behaviors on types with a "proxy namespace" struct to avoid name conflicts.
+/// Any definitions are called similar to
 /// ```
-/// public override func viewDidLoad() {
-/// ...
-/// stackView.topAnchor.constraint(equalTo: duet.topAnchor).isActive = true
-/// ...
-/// }
+/// (0..<4).duet.clamp(6)
 /// ```
-/// Note that in this example, the property `duet.topAnchor` is a case of highly situational behavior
-/// and thus is rightly "namespaced".
-///
-/// You should not mix in functionality for `ObservableType`s with this namespace; instead, use the
-/// `DuetRxNamespaceProxy` struct.
 public struct DuetNamespace<Base> {
 
     let base: Base
