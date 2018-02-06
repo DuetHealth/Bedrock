@@ -1,16 +1,9 @@
-//
-//  StringExtensionsSpec.swift
-//  BedrockTests
-//
-//  Created by sylvester watts on 2/6/18.
-//  Copyright © 2018 Duet Health LLC. All rights reserved.
-//
 
 import Foundation
 import Nimble
 import Quick
 
-class StringExtensionsSpec: QuickSpec {
+class StringSpec: QuickSpec {
 
     override func spec() {
 

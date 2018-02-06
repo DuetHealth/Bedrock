@@ -26,6 +26,7 @@ public extension BedrockNamespace where Base: Sequence {
     public func all(_ predicate: (Base.Element) throws -> Bool) rethrows -> Bool {
         var iterator = base.makeIterator()
         guard iterator.next() != nil else { return true }
+
         return try base.lazy.map(predicate).contains(false)
     }
 

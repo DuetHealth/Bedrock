@@ -1,16 +1,9 @@
-//
-//  SequenceExtensionsSpec.swift
-//  BedrockTests
-//
-//  Created by sylvester watts on 2/6/18.
-//  Copyright © 2018 Duet Health LLC. All rights reserved.
-//
 
 import Foundation
 import Nimble
 import Quick
 
-class SequenceExtensionsSpec: QuickSpec {
+class SequenceSpec: QuickSpec {
 
     override func spec() {
 
