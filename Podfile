@@ -9,7 +9,9 @@ target 'Bedrock' do
 
   target 'BedrockTests' do
     inherit! :search_paths
-    # Pods for testing
+    pod 'Nimble'
+    pod 'Quick'   
+ # Pods for testing
   end
 
 end
