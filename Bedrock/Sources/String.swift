@@ -1,17 +1,21 @@
 import Foundation
 
-public extension String {
+public extension DuetNamespace where Base == String {
 
     /// Returns a new string with the first character capitalized.
     public func capitalizingFirstLetter() -> String {
-        let first = String(prefix(1)).capitalized
-        let other = String(dropFirst())
+        let first = base.prefix(1).capitalized
+        let other = base.dropFirst()
         return first + other
     }
 
-    /// Capitalizes the first character of the string.
-    public mutating func capitalizeFirstLetter() {
-        self = self.capitalizingFirstLetter()
+}
+
+public extension String {
+
+    public var duet: DuetNamespace<String> {
+        return DuetNamespace(base: self)
     }
 
 }
+

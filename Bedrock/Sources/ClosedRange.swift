@@ -9,6 +9,7 @@ public extension ClosedRange {
     public func clamp(_ value: Bound) -> Bound {
         if value < self.lowerBound { return self.lowerBound }
         if value > self.upperBound { return self.upperBound }
+
         return value
     }
 
