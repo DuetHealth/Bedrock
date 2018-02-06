@@ -58,7 +58,7 @@ class SequenceSpec: QuickSpec {
         describe("The all method") {
 
             it("returns true for an empty array") {
-                expect([Int]().bedrock.all {$0 > 2 }).to(beTrue())
+                expect([Int]().bedrock.all { $0 > 2 }).to(beTrue())
             }
 
             it("returns false when exactly one element does not satisfy the predicate") {
