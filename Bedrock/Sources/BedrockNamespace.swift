@@ -5,7 +5,7 @@ import Foundation
 /// ```
 /// (0..<4).duet.clamp(6)
 /// ```
-public struct RockNamespace<Base> {
+public struct BedrockNamespace<Base> {
 
     let base: Base
 

@@ -1,6 +1,6 @@
 import Foundation
 
-public extension RockNamespace where Base == String {
+public extension BedrockNamespace where Base == String {
 
     /// Returns a new string with the first character capitalized.
     public func capitalizingFirstLetter() -> String {
@@ -13,8 +13,8 @@ public extension RockNamespace where Base == String {
 
 public extension String {
 
-    public var rock: RockNamespace<String> {
-        return RockNamespace(base: self)
+    public var bedrock: BedrockNamespace<String> {
+        return BedrockNamespace(base: self)
     }
 
 }
