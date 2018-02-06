@@ -13,7 +13,7 @@
 		7804A49D2028BA3C003E4330 /* OpenRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7804A49C2028BA3C003E4330 /* OpenRange.swift */; };
 		7804A49F2028BA77003E4330 /* LowerHalfOpenRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7804A49E2028BA77003E4330 /* LowerHalfOpenRange.swift */; };
 		7804A4A12028BAFB003E4330 /* NSArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7804A4A02028BAFB003E4330 /* NSArray.swift */; };
-		7804A4A82028C0BF003E4330 /* DuetNamespace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7804A4A72028C0BF003E4330 /* DuetNamespace.swift */; };
+		7804A4A82028C0BF003E4330 /* RockNamespace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7804A4A72028C0BF003E4330 /* RockNamespace.swift */; };
 		783440B22024DF51008DB8E0 /* Optional.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783440B12024DF51008DB8E0 /* Optional.swift */; };
 		783440B42024DFA0008DB8E0 /* Sequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783440B32024DFA0008DB8E0 /* Sequence.swift */; };
 		783440B72024E821008DB8E0 /* JSONCompatibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783440B62024E821008DB8E0 /* JSONCompatibility.swift */; };
@@ -49,7 +49,7 @@
 		7804A49C2028BA3C003E4330 /* OpenRange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenRange.swift; sourceTree = "<group>"; };
 		7804A49E2028BA77003E4330 /* LowerHalfOpenRange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LowerHalfOpenRange.swift; sourceTree = "<group>"; };
 		7804A4A02028BAFB003E4330 /* NSArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSArray.swift; sourceTree = "<group>"; };
-		7804A4A72028C0BF003E4330 /* DuetNamespace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuetNamespace.swift; sourceTree = "<group>"; };
+		7804A4A72028C0BF003E4330 /* RockNamespace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RockNamespace.swift; sourceTree = "<group>"; };
 		783440B12024DF51008DB8E0 /* Optional.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Optional.swift; sourceTree = "<group>"; };
 		783440B32024DFA0008DB8E0 /* Sequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sequence.swift; sourceTree = "<group>"; };
 		783440B62024E821008DB8E0 /* JSONCompatibility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONCompatibility.swift; sourceTree = "<group>"; };
@@ -164,7 +164,7 @@
 			isa = PBXGroup;
 			children = (
 				9426A6762024BBD2002F0BBB /* Bedrock.h */,
-				7804A4A72028C0BF003E4330 /* DuetNamespace.swift */,
+				7804A4A72028C0BF003E4330 /* RockNamespace.swift */,
 				94B7FE0C2028ECDE001C3011 /* Custom */,
 				94CDA5672028EA85009F2E4A /* JSONCompatible */,
 				7804A4902028B699003E4330 /* Bundle.swift */,
@@ -293,7 +293,7 @@
 				7804A4A12028BAFB003E4330 /* NSArray.swift in Sources */,
 				783440B42024DFA0008DB8E0 /* Sequence.swift in Sources */,
 				94B7FE162028EFA8001C3011 /* Date+JSONCompatible.swift in Sources */,
-				7804A4A82028C0BF003E4330 /* DuetNamespace.swift in Sources */,
+				7804A4A82028C0BF003E4330 /* RockNamespace.swift in Sources */,
 				94B7FE0E2028EE0C001C3011 /* Float+JSONCompatible.swift in Sources */,
 				7804A49F2028BA77003E4330 /* LowerHalfOpenRange.swift in Sources */,
 				783440B22024DF51008DB8E0 /* Optional.swift in Sources */,

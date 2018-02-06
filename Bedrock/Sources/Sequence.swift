@@ -1,6 +1,6 @@
 import Foundation
 
-public extension DuetNamespace where Base: Sequence {
+public extension RockNamespace where Base: Sequence {
 
     /// Partitions a sequence into two arrays corresponding with those elements which satisfy and do
     /// not satisfy the given predicate.
@@ -54,8 +54,8 @@ public extension Sequence where Self.Element == Bool {
 //
 public extension Sequence {
 
-    public var duet: DuetNamespace<Self> {
-        return DuetNamespace(base: self)
+    public var rock: RockNamespace<Self> {
+        return RockNamespace(base: self)
     }
 
 }

@@ -1,6 +1,6 @@
 import Foundation
 
-public extension DuetNamespace where Base: Bundle {
+public extension RockNamespace where Base: Bundle {
 
     /// Deserializes a JSON object. Will crash if file doesn't exist, is not a JSON object, is
     /// malformed, or is in a different bundle.
@@ -18,8 +18,8 @@ public extension DuetNamespace where Base: Bundle {
 
 public extension Bundle {
 
-    public var duet: DuetNamespace<Bundle> {
-        return DuetNamespace(base: self)
+    public var rock: RockNamespace<Bundle> {
+        return RockNamespace(base: self)
     }
 
 }

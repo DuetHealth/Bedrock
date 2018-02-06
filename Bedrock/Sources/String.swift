@@ -1,6 +1,6 @@
 import Foundation
 
-public extension DuetNamespace where Base == String {
+public extension RockNamespace where Base == String {
 
     /// Returns a new string with the first character capitalized.
     public func capitalizingFirstLetter() -> String {
@@ -13,8 +13,8 @@ public extension DuetNamespace where Base == String {
 
 public extension String {
 
-    public var duet: DuetNamespace<String> {
-        return DuetNamespace(base: self)
+    public var rock: RockNamespace<String> {
+        return RockNamespace(base: self)
     }
 
 }
