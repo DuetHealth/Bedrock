@@ -52,7 +52,6 @@ public extension Sequence where Self.Element == Bool {
 
 }
 
-//
 public extension Sequence {
 
     public var bedrock: BedrockNamespace<Self> {

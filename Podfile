@@ -11,7 +11,7 @@ target 'Bedrock' do
     inherit! :search_paths
     pod 'Nimble'
     pod 'Quick'   
- # Pods for testing
+
   end
 
 end
