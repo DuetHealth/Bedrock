@@ -596,7 +596,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1FB45EA124525823DFBE0442 /* Pods-BedrockTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 75Y586SA36;
@@ -614,7 +614,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F6B50A3F964FCCA4E6EC401B /* Pods-BedrockTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 75Y586SA36;
