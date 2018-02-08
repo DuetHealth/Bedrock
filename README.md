@@ -18,4 +18,4 @@ Run the command `pod install` to install the project's test dependencies and gen
 
 ## License
 
-Bedrock is MIT-licensed. The MIT license is included in the file `LICENSE` at the root of the repository.
+Bedrock is MIT-licensed. The [MIT license](LICENSE) is included in the root of the repository.
