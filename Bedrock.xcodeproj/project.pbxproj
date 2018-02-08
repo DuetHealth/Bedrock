@@ -19,6 +19,7 @@
 		783440B22024DF51008DB8E0 /* Optional.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783440B12024DF51008DB8E0 /* Optional.swift */; };
 		783440B42024DFA0008DB8E0 /* Sequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783440B32024DFA0008DB8E0 /* Sequence.swift */; };
 		783440BB2024F6CC008DB8E0 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783440BA2024F6CC008DB8E0 /* String.swift */; };
+		783490B8202CA723001248C3 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783490B7202CA723001248C3 /* Package.swift */; };
 		78CD2D87202A39E7005D8A21 /* LowerHalfOpenRangeSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CD2D86202A39E7005D8A21 /* LowerHalfOpenRangeSpec.swift */; };
 		78CD2D89202A3D1E005D8A21 /* OpenRangeSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CD2D88202A3D1E005D8A21 /* OpenRangeSpec.swift */; };
 		78CD2D8B202A3E27005D8A21 /* StringSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CD2D8A202A3E27005D8A21 /* StringSpec.swift */; };
@@ -53,6 +54,7 @@
 		783440B12024DF51008DB8E0 /* Optional.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Optional.swift; sourceTree = "<group>"; };
 		783440B32024DFA0008DB8E0 /* Sequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sequence.swift; sourceTree = "<group>"; };
 		783440BA2024F6CC008DB8E0 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		783490B7202CA723001248C3 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		78CD2D86202A39E7005D8A21 /* LowerHalfOpenRangeSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LowerHalfOpenRangeSpec.swift; sourceTree = "<group>"; };
 		78CD2D88202A3D1E005D8A21 /* OpenRangeSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenRangeSpec.swift; sourceTree = "<group>"; };
 		78CD2D8A202A3E27005D8A21 /* StringSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringSpec.swift; sourceTree = "<group>"; };
@@ -121,6 +123,7 @@
 		9426A6692024BBD2002F0BBB = {
 			isa = PBXGroup;
 			children = (
+				783490B7202CA723001248C3 /* Package.swift */,
 				9426A6752024BBD2002F0BBB /* Bedrock */,
 				9426A6802024BBD2002F0BBB /* BedrockTests */,
 				9426A6742024BBD2002F0BBB /* Products */,
@@ -402,6 +405,7 @@
 				783440BB2024F6CC008DB8E0 /* String.swift in Sources */,
 				7804A4912028B699003E4330 /* Bundle.swift in Sources */,
 				7804A49D2028BA3C003E4330 /* OpenRange.swift in Sources */,
+				783490B8202CA723001248C3 /* Package.swift in Sources */,
 				7804A4892028B376003E4330 /* Functions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
