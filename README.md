@@ -7,7 +7,9 @@ Bedrock is a utility library which provides common extensions of Foundation. The
 ### Installation
 
 Cocoapods: `pod 'Bedrock', '~> 1.0'`. See [Bedrock.podspec](Bedrock.podspec) for more information.
+
 Carthage: `github "DuetHealth/Bedrock" ~> 1.0 && carthage update`
+
 Swift Package Manager: `.package(url: "https://github.com/DuetHealth/Bedrock.git", "1.0.0" ..< "2.0.0")`
 
 ### Running tests
