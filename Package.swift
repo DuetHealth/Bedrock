@@ -4,14 +4,6 @@ import PackageDescription
 
 let package = Package(
     name: "Bedrock",
-    products: [
-        .library(
-            name: "Bedrock",
-            targets: ["Bedrock"]),
-        ],
-    targets: [
-        .target(
-            name: "Bedrock",
-            dependencies: [],path:"Bedrock"),
-        ]
+    products: [.library(name: "Bedrock", targets: ["Bedrock"]),],
+    targets: [.target(name: "Bedrock",dependencies: [], path:"Bedrock"),]
 )
