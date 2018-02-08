@@ -10,15 +10,8 @@ let package = Package(
             targets: ["Bedrock"]),
         ],
     targets: [
-
         .target(
             name: "Bedrock",
             dependencies: [],path:"Bedrock"),
-        .testTarget(
-            name: "BedrockTests",
-            dependencies: ["Bedrock"],path:"BedrockTests"),
         ]
 )
-
-
-
