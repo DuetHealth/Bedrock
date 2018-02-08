@@ -11,7 +11,6 @@
 		53AD82AC9804037E20DD36C3 /* Pods_BedrockTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 433CF877071BC76402514547 /* Pods_BedrockTests.framework */; };
 		7804A4892028B376003E4330 /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7804A4882028B376003E4330 /* Functions.swift */; };
 		7804A4912028B699003E4330 /* Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7804A4902028B699003E4330 /* Bundle.swift */; };
-		7804A4972028B7AE003E4330 /* ClosedRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7804A4962028B7AE003E4330 /* ClosedRange.swift */; };
 		7804A4A82028C0BF003E4330 /* BedrockNamespace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7804A4A72028C0BF003E4330 /* BedrockNamespace.swift */; };
 		783440B22024DF51008DB8E0 /* Optional.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783440B12024DF51008DB8E0 /* Optional.swift */; };
 		783440B42024DFA0008DB8E0 /* Sequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783440B32024DFA0008DB8E0 /* Sequence.swift */; };
@@ -21,6 +20,7 @@
 		78CD2D91202A418C005D8A21 /* OptionalSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CD2D90202A418C005D8A21 /* OptionalSpec.swift */; };
 		9426A67D2024BBD2002F0BBB /* Bedrock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9426A6732024BBD2002F0BBB /* Bedrock.framework */; };
 		9426A6842024BBD2002F0BBB /* Bedrock.h in Headers */ = {isa = PBXBuildFile; fileRef = 9426A6762024BBD2002F0BBB /* Bedrock.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		948F1E8F202CDAA700DB978C /* Range+Clamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948F1E8E202CDAA700DB978C /* Range+Clamp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +39,6 @@
 		433CF877071BC76402514547 /* Pods_BedrockTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BedrockTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7804A4882028B376003E4330 /* Functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
 		7804A4902028B699003E4330 /* Bundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bundle.swift; sourceTree = "<group>"; };
-		7804A4962028B7AE003E4330 /* ClosedRange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosedRange.swift; sourceTree = "<group>"; };
 		7804A4A72028C0BF003E4330 /* BedrockNamespace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BedrockNamespace.swift; sourceTree = "<group>"; };
 		783440B12024DF51008DB8E0 /* Optional.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Optional.swift; sourceTree = "<group>"; };
 		783440B32024DFA0008DB8E0 /* Sequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sequence.swift; sourceTree = "<group>"; };
@@ -53,6 +52,7 @@
 		9426A6772024BBD2002F0BBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9426A67C2024BBD2002F0BBB /* BedrockTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BedrockTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9426A6832024BBD2002F0BBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		948F1E8E202CDAA700DB978C /* Range+Clamp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Range+Clamp.swift"; sourceTree = "<group>"; };
 		CC311D4E61FA36976F73E989 /* Pods-Bedrock.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bedrock.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Bedrock/Pods-Bedrock.debug.xcconfig"; sourceTree = "<group>"; };
 		EAA82A0EBB308328411D6135 /* Pods_Bedrock.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bedrock.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6B50A3F964FCCA4E6EC401B /* Pods-BedrockTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BedrockTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BedrockTests/Pods-BedrockTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -154,9 +154,9 @@
 				9426A6762024BBD2002F0BBB /* Bedrock.h */,
 				7804A4A72028C0BF003E4330 /* BedrockNamespace.swift */,
 				7804A4902028B699003E4330 /* Bundle.swift */,
-				7804A4962028B7AE003E4330 /* ClosedRange.swift */,
 				7804A4882028B376003E4330 /* Functions.swift */,
 				783440B12024DF51008DB8E0 /* Optional.swift */,
+				948F1E8E202CDAA700DB978C /* Range+Clamp.swift */,
 				783440B32024DFA0008DB8E0 /* Sequence.swift */,
 				783440BA2024F6CC008DB8E0 /* String.swift */,
 			);
@@ -369,10 +369,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7804A4972028B7AE003E4330 /* ClosedRange.swift in Sources */,
 				783440B42024DFA0008DB8E0 /* Sequence.swift in Sources */,
 				7804A4A82028C0BF003E4330 /* BedrockNamespace.swift in Sources */,
 				783440B22024DF51008DB8E0 /* Optional.swift in Sources */,
+				948F1E8F202CDAA700DB978C /* Range+Clamp.swift in Sources */,
 				783440BB2024F6CC008DB8E0 /* String.swift in Sources */,
 				7804A4912028B699003E4330 /* Bundle.swift in Sources */,
 				7804A4892028B376003E4330 /* Functions.swift in Sources */,
