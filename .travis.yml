@@ -4,6 +4,10 @@ xcode_workspace: Bedrock.xcworkspace #3
 xcode_scheme: Bedrock #4
 xcode_sdk: iphonesimulator11.2
 
+install:
+  - pod repo update
+  - pod install
+
 script: 
   - xcodebuild -workspace Bedrock.xcworkspace -scheme Bedrock -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
   - xcodebuild test -workspace Bedrock.xcworkspace -scheme Bedrock -destination 'platform=iOS Simulator,name=iPhone 6,OS=9.0' -sdk iphonesimulator
