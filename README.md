@@ -1,5 +1,9 @@
 # Bedrock
 
+[![CocoaPods](https://img.shields.io/cocoapods/v/Bedrock.svg)](https://cocoapods.org/pods/Bedrock)
+[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
+[![build status](https://img.shields.io/travis/DuetHealth/Bedrock.svg)](https://travis-ci.org/DuetHealth/Bedrock)
+
 Bedrock is a utility library which provides common extensions of Foundation. The functionality included spans multiple paradigms and is intended to ease users into the nuanced expressivity of Swift.
 
 ## Usage
