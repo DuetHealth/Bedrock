@@ -18,6 +18,10 @@ public extension BedrockNamespace where Base: Bundle {
 
 public extension Bundle {
 
+    public convenience init<Caller: AnyObject>(of caller: Caller) {
+        self.init(for: type(of: caller))
+    }
+
     public var bedrock: BedrockNamespace<Bundle> {
         return BedrockNamespace(base: self)
     }

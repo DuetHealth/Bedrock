@@ -21,6 +21,7 @@
 		9426A67D2024BBD2002F0BBB /* Bedrock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9426A6732024BBD2002F0BBB /* Bedrock.framework */; };
 		9426A6842024BBD2002F0BBB /* Bedrock.h in Headers */ = {isa = PBXBuildFile; fileRef = 9426A6762024BBD2002F0BBB /* Bedrock.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		948F1E8F202CDAA700DB978C /* Range+Clamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948F1E8E202CDAA700DB978C /* Range+Clamp.swift */; };
+		94B6AF9C20F7D25B00E185FC /* BundleSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B6AF9B20F7D25B00E185FC /* BundleSpec.swift */; };
 		94F30FAF20628CD10073B904 /* Tuple.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F30FAE20628CD10073B904 /* Tuple.swift */; };
 		94F30FB12062931A0073B904 /* Pipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F30FB02062931A0073B904 /* Pipe.swift */; };
 		94F30FB32062955F0073B904 /* Curry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F30FB22062955F0073B904 /* Curry.swift */; };
@@ -57,6 +58,7 @@
 		9426A67C2024BBD2002F0BBB /* BedrockTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BedrockTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9426A6832024BBD2002F0BBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		948F1E8E202CDAA700DB978C /* Range+Clamp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Range+Clamp.swift"; sourceTree = "<group>"; };
+		94B6AF9B20F7D25B00E185FC /* BundleSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleSpec.swift; sourceTree = "<group>"; };
 		94F30FAE20628CD10073B904 /* Tuple.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tuple.swift; sourceTree = "<group>"; };
 		94F30FB02062931A0073B904 /* Pipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pipe.swift; sourceTree = "<group>"; };
 		94F30FB22062955F0073B904 /* Curry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Curry.swift; sourceTree = "<group>"; };
@@ -149,6 +151,7 @@
 			isa = PBXGroup;
 			children = (
 				9426A6832024BBD2002F0BBB /* Info.plist */,
+				94B6AF9B20F7D25B00E185FC /* BundleSpec.swift */,
 				78CD2D8A202A3E27005D8A21 /* StringSpec.swift */,
 				78CD2D8E202A4087005D8A21 /* SequenceSpec.swift */,
 				78CD2D90202A418C005D8A21 /* OptionalSpec.swift */,
@@ -407,6 +410,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94B6AF9C20F7D25B00E185FC /* BundleSpec.swift in Sources */,
 				78CD2D8B202A3E27005D8A21 /* StringSpec.swift in Sources */,
 				78CD2D91202A418C005D8A21 /* OptionalSpec.swift in Sources */,
 				78CD2D8F202A4087005D8A21 /* SequenceSpec.swift in Sources */,
