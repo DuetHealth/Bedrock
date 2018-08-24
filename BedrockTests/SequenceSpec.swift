@@ -75,6 +75,64 @@ class SequenceSpec: QuickSpec {
 
         }
 
+        describe("The map(accessing:) method") {
+
+            it("returns an empty array for an empty array") {
+                expect([Int]().bedrock.map(accessing: \Int.description)).to(equal([]))
+            }
+
+            it("returns the property for each element") {
+                expect([1, 2, 3].bedrock.map(accessing: \Int.description)).to(equal(["1", "2", "3"]))
+            }
+
+        }
+
+        describe("The filter(accepting:) method") {
+
+            it("returns an empty array for an empty array") {
+                expect([Int]().bedrock.filter(accepting: \.isNegative)).to(equal([]))
+            }
+
+            it("returns the same array when accepting all true values") {
+                expect([-1, -2, -3].bedrock.filter(accepting: \.isNegative)).to(equal([-1, -2, -3]))
+            }
+
+            it("returns an empty array when accepting all false values") {
+                expect([1, 2, 3].bedrock.filter(accepting: \.isNegative)).to(equal([]))
+            }
+
+            it("returns the correct array when accepting mixed values") {
+                expect([-1, 2, 3, -4, -5, 6, -7].bedrock.filter(accepting: \.isNegative)).to(equal([-1, -4, -5, -7]))
+            }
+
+        }
+
+        describe("The filter(rejecting:) method") {
+
+            it("returns an empty array for an empty array") {
+                expect([Int]().bedrock.filter(rejecting: \.isNegative)).to(equal([]))
+            }
+
+            it("returns an empty array when rejecting all true values") {
+                expect([-1, -2, -3].bedrock.filter(rejecting: \.isNegative)).to(equal([]))
+            }
+
+            it("returns the same array when rejecting all false values") {
+                expect([1, 2, 3].bedrock.filter(rejecting: \.isNegative)).to(equal([1, 2, 3]))
+            }
+
+            it("returns the correct array when rejecting mixed values") {
+                expect([-1, 2, 3, -4, -5, 6, -7].bedrock.filter(rejecting: \.isNegative)).to(equal([2, 3, 6]))
+            }
+
+        }
+
     }
 
+}
+
+fileprivate extension Int {
+    var isNegative: Bool {
+        return self <= 0
+    }
 }
