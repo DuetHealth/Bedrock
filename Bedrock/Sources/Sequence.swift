@@ -35,6 +35,32 @@ public extension BedrockNamespace where Base: Sequence {
         return try base.lazy.map(predicate).contains(true)
     }
 
+
+    /// Projects the elements of sequence into a new form by accessing the descendant property
+    /// represented by the argument key path.
+    ///
+    /// - Parameter property: a key path to a descendant property.
+    /// - Returns: an array containing the transformed elements of this sequence.
+    public func map<T>(accessing property: KeyPath<Base.Element, T>) -> [T] {
+        return base.map { $0[keyPath: property] }
+    }
+
+    /// Filters the element of the sequence where the descendant property is `true`.
+    ///
+    /// - Parameter property: a key path to a descendant property.
+    /// - Returns: an array containing the transformed elements of this sequence.
+    public func filter(accepting property: KeyPath<Base.Element, Bool>) -> [Base.Element] {
+        return base.filter { $0[keyPath: property] }
+    }
+
+    /// Filters the element of the sequence where the descendant property is `false`.
+    ///
+    /// - Parameter property: a key path to a descendant property.
+    /// - Returns: an array containing the transformed elements of this sequence.
+    public func filter(rejecting property: KeyPath<Base.Element, Bool>) -> [Base.Element] {
+        return base.filter { !$0[keyPath: property] }
+    }
+
 }
 
 public extension Sequence where Self.Element == Bool {
