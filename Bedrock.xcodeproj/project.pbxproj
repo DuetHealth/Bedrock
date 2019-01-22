@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1873EF2A79738E75210792EA /* Pods_Bedrock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAA82A0EBB308328411D6135 /* Pods_Bedrock.framework */; };
-		53AD82AC9804037E20DD36C3 /* Pods_BedrockTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 433CF877071BC76402514547 /* Pods_BedrockTests.framework */; };
 		7804A4892028B376003E4330 /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7804A4882028B376003E4330 /* Functions.swift */; };
 		7804A4912028B699003E4330 /* Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7804A4902028B699003E4330 /* Bundle.swift */; };
 		7804A4A82028C0BF003E4330 /* BedrockNamespace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7804A4A72028C0BF003E4330 /* BedrockNamespace.swift */; };
@@ -26,6 +24,10 @@
 		94F30FB12062931A0073B904 /* Pipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F30FB02062931A0073B904 /* Pipe.swift */; };
 		94F30FB32062955F0073B904 /* Curry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F30FB22062955F0073B904 /* Curry.swift */; };
 		94F30FB52062997D0073B904 /* Compose.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F30FB42062997D0073B904 /* Compose.swift */; };
+		B5EAC1F221F6ACBF00154B4A /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5EAC1F021F6ACBF00154B4A /* Nimble.framework */; };
+		B5EAC1F321F6ACBF00154B4A /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5EAC1F121F6ACBF00154B4A /* Quick.framework */; };
+		B5EAC1F521F6ACDA00154B4A /* Nimble.framework in Copy Carthage Frameworks */ = {isa = PBXBuildFile; fileRef = B5EAC1F021F6ACBF00154B4A /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B5EAC1F621F6ACDA00154B4A /* Quick.framework in Copy Carthage Frameworks */ = {isa = PBXBuildFile; fileRef = B5EAC1F121F6ACBF00154B4A /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,10 +40,22 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		B5EAC1F421F6ACC200154B4A /* Copy Carthage Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B5EAC1F521F6ACDA00154B4A /* Nimble.framework in Copy Carthage Frameworks */,
+				B5EAC1F621F6ACDA00154B4A /* Quick.framework in Copy Carthage Frameworks */,
+			);
+			name = "Copy Carthage Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		1FB45EA124525823DFBE0442 /* Pods-BedrockTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BedrockTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BedrockTests/Pods-BedrockTests.debug.xcconfig"; sourceTree = "<group>"; };
-		2A7B1729C7E576CF0DB18981 /* Pods-Bedrock.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bedrock.release.xcconfig"; path = "Pods/Target Support Files/Pods-Bedrock/Pods-Bedrock.release.xcconfig"; sourceTree = "<group>"; };
-		433CF877071BC76402514547 /* Pods_BedrockTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BedrockTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7804A4882028B376003E4330 /* Functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
 		7804A4902028B699003E4330 /* Bundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bundle.swift; sourceTree = "<group>"; };
 		7804A4A72028C0BF003E4330 /* BedrockNamespace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BedrockNamespace.swift; sourceTree = "<group>"; };
@@ -63,9 +77,8 @@
 		94F30FB02062931A0073B904 /* Pipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pipe.swift; sourceTree = "<group>"; };
 		94F30FB22062955F0073B904 /* Curry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Curry.swift; sourceTree = "<group>"; };
 		94F30FB42062997D0073B904 /* Compose.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Compose.swift; sourceTree = "<group>"; };
-		CC311D4E61FA36976F73E989 /* Pods-Bedrock.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bedrock.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Bedrock/Pods-Bedrock.debug.xcconfig"; sourceTree = "<group>"; };
-		EAA82A0EBB308328411D6135 /* Pods_Bedrock.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bedrock.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F6B50A3F964FCCA4E6EC401B /* Pods-BedrockTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BedrockTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BedrockTests/Pods-BedrockTests.release.xcconfig"; sourceTree = "<group>"; };
+		B5EAC1F021F6ACBF00154B4A /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
+		B5EAC1F121F6ACBF00154B4A /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,7 +86,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1873EF2A79738E75210792EA /* Pods_Bedrock.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,33 +94,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				9426A67D2024BBD2002F0BBB /* Bedrock.framework in Frameworks */,
-				53AD82AC9804037E20DD36C3 /* Pods_BedrockTests.framework in Frameworks */,
+				B5EAC1F221F6ACBF00154B4A /* Nimble.framework in Frameworks */,
+				B5EAC1F321F6ACBF00154B4A /* Quick.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		765DC048597F7E7074573AD5 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				EAA82A0EBB308328411D6135 /* Pods_Bedrock.framework */,
-				433CF877071BC76402514547 /* Pods_BedrockTests.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		76C8480A55E48AD900AF7AB3 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				CC311D4E61FA36976F73E989 /* Pods-Bedrock.debug.xcconfig */,
-				2A7B1729C7E576CF0DB18981 /* Pods-Bedrock.release.xcconfig */,
-				1FB45EA124525823DFBE0442 /* Pods-BedrockTests.debug.xcconfig */,
-				F6B50A3F964FCCA4E6EC401B /* Pods-BedrockTests.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		783440B52024DFD6008DB8E0 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -124,8 +117,7 @@
 				9426A6752024BBD2002F0BBB /* Bedrock */,
 				9426A6802024BBD2002F0BBB /* BedrockTests */,
 				9426A6742024BBD2002F0BBB /* Products */,
-				76C8480A55E48AD900AF7AB3 /* Pods */,
-				765DC048597F7E7074573AD5 /* Frameworks */,
+				B5EAC1EF21F6ACBF00154B4A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -186,6 +178,15 @@
 			path = Functional;
 			sourceTree = "<group>";
 		};
+		B5EAC1EF21F6ACBF00154B4A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B5EAC1F021F6ACBF00154B4A /* Nimble.framework */,
+				B5EAC1F121F6ACBF00154B4A /* Quick.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -204,12 +205,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9426A6872024BBD2002F0BBB /* Build configuration list for PBXNativeTarget "Bedrock" */;
 			buildPhases = (
-				D0C6C43CE5131733BE7D2703 /* [CP] Check Pods Manifest.lock */,
 				9426A66E2024BBD2002F0BBB /* Sources */,
 				9426A66F2024BBD2002F0BBB /* Frameworks */,
 				9426A6702024BBD2002F0BBB /* Headers */,
 				9426A6712024BBD2002F0BBB /* Resources */,
-				3B3ACAB04AED07C958F73526 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -224,12 +223,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9426A68A2024BBD2002F0BBB /* Build configuration list for PBXNativeTarget "BedrockTests" */;
 			buildPhases = (
-				0A8E8E857C3CC6EA4F398641 /* [CP] Check Pods Manifest.lock */,
 				9426A6782024BBD2002F0BBB /* Sources */,
 				9426A6792024BBD2002F0BBB /* Frameworks */,
 				9426A67A2024BBD2002F0BBB /* Resources */,
-				C0368FDF6247E278915BE85F /* [CP] Embed Pods Frameworks */,
-				3BB64F64C0BEE19F71C11087 /* [CP] Copy Pods Resources */,
+				B5EAC1F421F6ACC200154B4A /* Copy Carthage Frameworks */,
 			);
 			buildRules = (
 			);
@@ -253,12 +250,12 @@
 				TargetAttributes = {
 					9426A6722024BBD2002F0BBB = {
 						CreatedOnToolsVersion = 9.2;
-						LastSwiftMigration = 0920;
+						LastSwiftMigration = 1010;
 						ProvisioningStyle = Automatic;
 					};
 					9426A67B2024BBD2002F0BBB = {
 						CreatedOnToolsVersion = 9.2;
-						LastSwiftMigration = 0920;
+						LastSwiftMigration = 1010;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -297,95 +294,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		0A8E8E857C3CC6EA4F398641 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-BedrockTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		3B3ACAB04AED07C958F73526 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Bedrock/Pods-Bedrock-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		3BB64F64C0BEE19F71C11087 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BedrockTests/Pods-BedrockTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C0368FDF6247E278915BE85F /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-BedrockTests/Pods-BedrockTests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
-				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BedrockTests/Pods-BedrockTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D0C6C43CE5131733BE7D2703 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Bedrock-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9426A66E2024BBD2002F0BBB /* Sources */ = {
@@ -543,7 +451,6 @@
 		};
 		9426A6882024BBD2002F0BBB /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CC311D4E61FA36976F73E989 /* Pods-Bedrock.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -561,14 +468,13 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		9426A6892024BBD2002F0BBB /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2A7B1729C7E576CF0DB18981 /* Pods-Bedrock.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -585,42 +491,48 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.duet.Bedrock;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
 		9426A68B2024BBD2002F0BBB /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1FB45EA124525823DFBE0442 /* Pods-BedrockTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 75Y586SA36;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = BedrockTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.duet.BedrockTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		9426A68C2024BBD2002F0BBB /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F6B50A3F964FCCA4E6EC401B /* Pods-BedrockTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 75Y586SA36;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = BedrockTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.duet.BedrockTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
