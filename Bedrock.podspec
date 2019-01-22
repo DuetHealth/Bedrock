@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name                  = 'Bedrock'
-  s.version               = '1.1.0'
+  s.version               = '2.0.0'
   s.summary               = "What's deeper than the foundation?"
   s.description           = "Bedrock is a utility library which provides common extensions of Foundation. The functionality included spans multiple paradigms and is intended to ease users into the nuanced expressivity of Swift."
   s.license               = { type: 'MIT', file: 'LICENSE' }
@@ -19,5 +19,5 @@ Pod::Spec.new do |s|
   s.source_files          = "Bedrock/Sources/**/*.{h,m,swift}"
   s.requires_arc          = true
   s.ios.deployment_target = '8.0'
-  s.swift_version         = '4.0'
+  s.swift_version         = '4.2'
 end
