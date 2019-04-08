@@ -6,7 +6,7 @@ public extension CountableClosedRange {
     ///
     /// - Parameter value: the value to clamp.
     /// - Returns: a value greater than or equal to `lowerBound` and less than or equal to `upperBound`.
-    public func clamp(_ value: Bound) -> Bound {
+    func clamp(_ value: Bound) -> Bound {
         if value < self.lowerBound { return self.lowerBound }
         if value > self.upperBound { return self.upperBound }
 
@@ -21,7 +21,7 @@ public extension CountableRange {
     ///
     /// - Parameter value: the value to clamp.
     /// - Returns: a value greater than or equal to `lowerBound` and less than `upperBound`.
-    public func clamp(_ value: Bound) -> Bound {
+    func clamp(_ value: Bound) -> Bound {
         if value < self.lowerBound { return self.lowerBound }
         if value > self.upperBound { return self.upperBound }
 

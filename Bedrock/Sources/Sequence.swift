@@ -7,7 +7,7 @@ public extension BedrockNamespace where Base: Sequence {
     ///
     /// - Parameter predicate: the predicate for which each element is evaluated
     /// - Returns: a tuple of satisfying and unsatisfying arrays of elements
-    public func partition(_ predicate: (Base.Element) throws -> Bool) rethrows -> (satisfied: [Base.Element], unsatisfied: [Base.Element]) {
+    func partition(_ predicate: (Base.Element) throws -> Bool) rethrows -> (satisfied: [Base.Element], unsatisfied: [Base.Element]) {
         var satisfied = [Base.Element]()
         var unsatified = [Base.Element]()
         for element in base {
@@ -23,7 +23,7 @@ public extension BedrockNamespace where Base: Sequence {
     ///
     /// - Parameter predicate: the predicate for which each element is evaluated
     /// - Returns: true if any only if all elements satisfy the predicate.
-    public func all(_ predicate: (Base.Element) throws -> Bool) rethrows -> Bool {
+    func all(_ predicate: (Base.Element) throws -> Bool) rethrows -> Bool {
         return try !base.lazy.map(predicate).contains(false)
     }
 
@@ -31,7 +31,7 @@ public extension BedrockNamespace where Base: Sequence {
     ///
     /// - Parameter predicate: the predicate for which each element is evaluated
     /// - Returns: true if any element satisfies the predicate.
-    public func any(_ predicate: (Base.Element) throws -> Bool) rethrows -> Bool {
+    func any(_ predicate: (Base.Element) throws -> Bool) rethrows -> Bool {
         return try base.lazy.map(predicate).contains(true)
     }
 
@@ -41,7 +41,7 @@ public extension BedrockNamespace where Base: Sequence {
     ///
     /// - Parameter property: a key path to a descendant property.
     /// - Returns: an array containing the transformed elements of this sequence.
-    public func map<T>(accessing property: KeyPath<Base.Element, T>) -> [T] {
+    func map<T>(accessing property: KeyPath<Base.Element, T>) -> [T] {
         return base.map { $0[keyPath: property] }
     }
 
@@ -49,7 +49,7 @@ public extension BedrockNamespace where Base: Sequence {
     ///
     /// - Parameter property: a key path to a descendant property.
     /// - Returns: an array containing the transformed elements of this sequence.
-    public func filter(accepting property: KeyPath<Base.Element, Bool>) -> [Base.Element] {
+    func filter(accepting property: KeyPath<Base.Element, Bool>) -> [Base.Element] {
         return base.filter { $0[keyPath: property] }
     }
 
@@ -57,7 +57,7 @@ public extension BedrockNamespace where Base: Sequence {
     ///
     /// - Parameter property: a key path to a descendant property.
     /// - Returns: an array containing the transformed elements of this sequence.
-    public func filter(rejecting property: KeyPath<Base.Element, Bool>) -> [Base.Element] {
+    func filter(rejecting property: KeyPath<Base.Element, Bool>) -> [Base.Element] {
         return base.filter { !$0[keyPath: property] }
     }
 
@@ -66,12 +66,12 @@ public extension BedrockNamespace where Base: Sequence {
 public extension Sequence where Self.Element == Bool {
 
     /// Returns true if and only if the sequence does not contain `false`.
-    public var all: Bool {
+    var all: Bool {
         return !self.contains(false)
     }
 
     /// Returns whether the sequence contains `true`.
-    public var any: Bool {
+    var any: Bool {
         return self.contains(true)
     }
 
@@ -79,7 +79,7 @@ public extension Sequence where Self.Element == Bool {
 
 public extension Sequence {
 
-    public var bedrock: BedrockNamespace<Self> {
+    var bedrock: BedrockNamespace<Self> {
         return BedrockNamespace(base: self)
     }
 
