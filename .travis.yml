@@ -11,5 +11,7 @@ install:
   - carthage update --platform iOS
 
 script: 
+  - pod lib lint
+  - ./validate_spm.sh Bedrock.xcodeproj Bedrock
   - xcodebuild -project Bedrock.xcodeproj -scheme Bedrock -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO | xcpretty
   - xcodebuild test -project Bedrock.xcodeproj -scheme Bedrock -destination 'platform=iOS Simulator,name=iPhone 6,OS=12.2' -sdk iphonesimulator
