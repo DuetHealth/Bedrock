@@ -1,8 +1,7 @@
 # Bedrock
 
 [![CocoaPods](https://img.shields.io/cocoapods/v/Bedrock.svg)](https://cocoapods.org/pods/Bedrock)
-[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
-[![build status](https://img.shields.io/travis/DuetHealth/Bedrock.svg)](https://travis-ci.org/DuetHealth/Bedrock)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![Swift Package Manager](https://github.com/DuetHealth/Bedrock/workflows/Swift%20Package%20Manager/badge.svg)](https://github.com/DuetHealth/Bedrock/actions?query=workflow%3A%22Swift+Package+Manager%22) [![Carthage](https://github.com/DuetHealth/Bedrock/workflows/Carthage/badge.svg)](https://github.com/DuetHealth/Bedrock/actions?query=workflow%3ACarthage) [![Cocoapods](https://github.com/DuetHealth/Bedrock/workflows/Cocoapods/badge.svg)](https://github.com/DuetHealth/Bedrock/actions?query=workflow%3ACocoapods)
 
 Bedrock is a utility library which provides common extensions of Foundation. The functionality included spans multiple paradigms and is intended to ease users into the nuanced expressivity of Swift.
 
