@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 48;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -24,10 +24,8 @@
 		94F30FB12062931A0073B904 /* Pipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F30FB02062931A0073B904 /* Pipe.swift */; };
 		94F30FB32062955F0073B904 /* Curry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F30FB22062955F0073B904 /* Curry.swift */; };
 		94F30FB52062997D0073B904 /* Compose.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F30FB42062997D0073B904 /* Compose.swift */; };
-		B5EAC1F221F6ACBF00154B4A /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5EAC1F021F6ACBF00154B4A /* Nimble.framework */; };
-		B5EAC1F321F6ACBF00154B4A /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5EAC1F121F6ACBF00154B4A /* Quick.framework */; };
-		B5EAC1F521F6ACDA00154B4A /* Nimble.framework in Copy Carthage Frameworks */ = {isa = PBXBuildFile; fileRef = B5EAC1F021F6ACBF00154B4A /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		B5EAC1F621F6ACDA00154B4A /* Quick.framework in Copy Carthage Frameworks */ = {isa = PBXBuildFile; fileRef = B5EAC1F121F6ACBF00154B4A /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B5E51BFF244B9E7400AC06E2 /* Nimble in Frameworks */ = {isa = PBXBuildFile; productRef = B5E51BFE244B9E7400AC06E2 /* Nimble */; };
+		B5E51C02244B9E8B00AC06E2 /* Quick in Frameworks */ = {isa = PBXBuildFile; productRef = B5E51C01244B9E8B00AC06E2 /* Quick */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,21 +37,6 @@
 			remoteInfo = Bedrock;
 		};
 /* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		B5EAC1F421F6ACC200154B4A /* Copy Carthage Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				B5EAC1F521F6ACDA00154B4A /* Nimble.framework in Copy Carthage Frameworks */,
-				B5EAC1F621F6ACDA00154B4A /* Quick.framework in Copy Carthage Frameworks */,
-			);
-			name = "Copy Carthage Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		7804A4882028B376003E4330 /* Functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
@@ -77,8 +60,6 @@
 		94F30FB02062931A0073B904 /* Pipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pipe.swift; sourceTree = "<group>"; };
 		94F30FB22062955F0073B904 /* Curry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Curry.swift; sourceTree = "<group>"; };
 		94F30FB42062997D0073B904 /* Compose.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Compose.swift; sourceTree = "<group>"; };
-		B5EAC1F021F6ACBF00154B4A /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
-		B5EAC1F121F6ACBF00154B4A /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,9 +74,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5E51C02244B9E8B00AC06E2 /* Quick in Frameworks */,
 				9426A67D2024BBD2002F0BBB /* Bedrock.framework in Frameworks */,
-				B5EAC1F221F6ACBF00154B4A /* Nimble.framework in Frameworks */,
-				B5EAC1F321F6ACBF00154B4A /* Quick.framework in Frameworks */,
+				B5E51BFF244B9E7400AC06E2 /* Nimble in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,11 +123,8 @@
 		9426A6802024BBD2002F0BBB /* BedrockTests */ = {
 			isa = PBXGroup;
 			children = (
+				B5E51BFC244B9DC400AC06E2 /* Sources */,
 				9426A6832024BBD2002F0BBB /* Info.plist */,
-				94B6AF9B20F7D25B00E185FC /* BundleSpec.swift */,
-				78CD2D8A202A3E27005D8A21 /* StringSpec.swift */,
-				78CD2D8E202A4087005D8A21 /* SequenceSpec.swift */,
-				78CD2D90202A418C005D8A21 /* OptionalSpec.swift */,
 			);
 			path = BedrockTests;
 			sourceTree = "<group>";
@@ -178,11 +156,20 @@
 			path = Functional;
 			sourceTree = "<group>";
 		};
+		B5E51BFC244B9DC400AC06E2 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				94B6AF9B20F7D25B00E185FC /* BundleSpec.swift */,
+				78CD2D8A202A3E27005D8A21 /* StringSpec.swift */,
+				78CD2D8E202A4087005D8A21 /* SequenceSpec.swift */,
+				78CD2D90202A418C005D8A21 /* OptionalSpec.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
 		B5EAC1EF21F6ACBF00154B4A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				B5EAC1F021F6ACBF00154B4A /* Nimble.framework */,
-				B5EAC1F121F6ACBF00154B4A /* Quick.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -226,7 +213,6 @@
 				9426A6782024BBD2002F0BBB /* Sources */,
 				9426A6792024BBD2002F0BBB /* Frameworks */,
 				9426A67A2024BBD2002F0BBB /* Resources */,
-				B5EAC1F421F6ACC200154B4A /* Copy Carthage Frameworks */,
 			);
 			buildRules = (
 			);
@@ -234,6 +220,10 @@
 				9426A67F2024BBD2002F0BBB /* PBXTargetDependency */,
 			);
 			name = BedrockTests;
+			packageProductDependencies = (
+				B5E51BFE244B9E7400AC06E2 /* Nimble */,
+				B5E51C01244B9E8B00AC06E2 /* Quick */,
+			);
 			productName = BedrockTests;
 			productReference = 9426A67C2024BBD2002F0BBB /* BedrockTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -269,6 +259,10 @@
 				Base,
 			);
 			mainGroup = 9426A6692024BBD2002F0BBB;
+			packageReferences = (
+				B5E51BFD244B9E7400AC06E2 /* XCRemoteSwiftPackageReference "Nimble" */,
+				B5E51C00244B9E8B00AC06E2 /* XCRemoteSwiftPackageReference "Quick" */,
+			);
 			productRefGroup = 9426A6742024BBD2002F0BBB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -447,7 +441,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -468,7 +463,11 @@
 				INFOPLIST_FILE = "Bedrock/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.duet.Bedrock;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -492,7 +491,11 @@
 				INFOPLIST_FILE = "Bedrock/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.duet.Bedrock;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -508,12 +511,12 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 75Y586SA36;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
 				INFOPLIST_FILE = BedrockTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.duet.BedrockTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -529,12 +532,12 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 75Y586SA36;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
 				INFOPLIST_FILE = BedrockTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.duet.BedrockTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -573,6 +576,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B5E51BFD244B9E7400AC06E2 /* XCRemoteSwiftPackageReference "Nimble" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Quick/Nimble.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.7;
+			};
+		};
+		B5E51C00244B9E8B00AC06E2 /* XCRemoteSwiftPackageReference "Quick" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Quick/Quick.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B5E51BFE244B9E7400AC06E2 /* Nimble */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B5E51BFD244B9E7400AC06E2 /* XCRemoteSwiftPackageReference "Nimble" */;
+			productName = Nimble;
+		};
+		B5E51C01244B9E8B00AC06E2 /* Quick */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B5E51C00244B9E8B00AC06E2 /* XCRemoteSwiftPackageReference "Quick" */;
+			productName = Quick;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9426A66A2024BBD2002F0BBB /* Project object */;
 }
