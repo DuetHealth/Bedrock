@@ -11,7 +11,7 @@ let package = Package(
                    .package(url: "https://github.com/Quick/Quick.git", from: "2.2.0"),
                   ],
     targets: [
-              .target(name: "Bedrock",dependencies: [], path:"Bedrock"),
+              .target(name: "Bedrock", dependencies: [], path:"Bedrock"),
               .testTarget(name: "BedrockTests", dependencies: ["Bedrock", "Nimble", "Quick"], path: "BedrockTests/Sources"),
 	     ]
 )
