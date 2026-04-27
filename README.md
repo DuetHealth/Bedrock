@@ -1,3 +1,5 @@
+![CI](https://github.com/DuetHealth/Bedrock/actions/workflows/ci.yml/badge.svg)
+
 # Bedrock
 
 Bedrock is a utility library which provides common extensions of Foundation. The functionality included spans multiple paradigms and is intended to ease users into the nuanced expressivity of Swift.
